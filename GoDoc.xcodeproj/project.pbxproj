@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171322452C3DA49200E25C68 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171322442C3DA49200E25C68 /* Extension.swift */; };
+		171322472C3DA63400E25C68 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171322462C3DA63400E25C68 /* SplashView.swift */; };
 		173388462C3C2F7A002EFF83 /* GoDocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173388452C3C2F7A002EFF83 /* GoDocApp.swift */; };
 		173388482C3C2F7A002EFF83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173388472C3C2F7A002EFF83 /* ContentView.swift */; };
 		1733884A2C3C2F7C002EFF83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173388492C3C2F7C002EFF83 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171322442C3DA49200E25C68 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		171322462C3DA63400E25C68 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		173388422C3C2F7A002EFF83 /* GoDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		173388452C3C2F7A002EFF83 /* GoDocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoDocApp.swift; sourceTree = "<group>"; };
 		173388472C3C2F7A002EFF83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				173388712C3C3779002EFF83 /* InputFieldView.swift */,
 				173388472C3C2F7A002EFF83 /* ContentView.swift */,
 				1733886F2C3C3239002EFF83 /* LoginUIView.swift */,
+				171322462C3DA63400E25C68 /* SplashView.swift */,
+				171322442C3DA49200E25C68 /* Extension.swift */,
 				173388492C3C2F7C002EFF83 /* Assets.xcassets */,
 				1733884B2C3C2F7C002EFF83 /* Preview Content */,
 			);
@@ -263,10 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171322452C3DA49200E25C68 /* Extension.swift in Sources */,
 				173388702C3C3239002EFF83 /* LoginUIView.swift in Sources */,
 				173388482C3C2F7A002EFF83 /* ContentView.swift in Sources */,
 				173388722C3C3779002EFF83 /* InputFieldView.swift in Sources */,
 				173388462C3C2F7A002EFF83 /* GoDocApp.swift in Sources */,
+				171322472C3DA63400E25C68 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,18 +13,21 @@ struct LoginUIView: View {
     
     var body: some View {
         VStack {
+            Image(.logo)
+                        .resizable()
+                        .frame(width: 200, height: 200)
             Text("GoDoc")
                // .font(.largeTitle)
                 .font(.system(size: 80))
                 .fontWeight(.heavy)
-                .foregroundColor(Color.gray)
                 .multilineTextAlignment(.center)
-                .padding(.horizontal, 20.0)
-               // .padding(.bottom, 5)
+                .padding(.top, -20)
+                .foregroundColor(Color(hex: "#CB6CE6"))
+            
             Text("Login")
-                .font(.system(size: 40))
+                .font(.system(size: 25))
                 .fontWeight(.bold)
-                .foregroundColor(Color.black)
+                .foregroundColor(Color.gray)
                 .multilineTextAlignment(.center)
             VStack(spacing: 16.0){
                 InputFieldView(data: $username, title: "Username")
