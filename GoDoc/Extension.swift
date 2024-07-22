@@ -32,3 +32,38 @@ extension Color {
         )
     }
 }
+
+struct TextView: UIViewRepresentable {
+    @Binding var text: String
+
+    func makeUIView(context: Context) -> UITextView {
+        let textView = UITextView()
+        textView.delegate = context.coordinator
+        textView.isEditable = true
+        textView.isScrollEnabled = true
+        textView.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
+        textView.layer.cornerRadius = 5
+        textView.font = UIFont.systemFont(ofSize: 17)
+        return textView
+    }
+
+    func updateUIView(_ uiView: UITextView, context: Context) {
+        uiView.text = text
+    }
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+
+    class Coordinator: NSObject, UITextViewDelegate {
+        var parent: TextView
+
+        init(_ parent: TextView) {
+            self.parent = parent
+        }
+
+        func textViewDidChange(_ textView: UITextView) {
+            parent.text = textView.text
+        }
+    }
+}
